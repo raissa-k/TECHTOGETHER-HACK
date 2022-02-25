@@ -43,6 +43,7 @@ width: 100%;
 
 a:focus, button:focus, a:active, button:active {
   border: 0.3rem solid #c92525;
+  text-decoration: underline;
 }
 
 /******************************************
@@ -88,6 +89,16 @@ nav span {
 /******************************************
 /* HEADER
 /*******************************************/
+
+a {
+  color: #063d5d;
+  text-decoration: none;
+}
+
+a:visited, a:hover {
+  color: #c92525;
+}
+
 header{
 background-color:#ffffff;
 height:fit-content;
