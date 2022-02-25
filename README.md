@@ -7,7 +7,7 @@
 > JavaScript
 
 To-do:
-- Add placeholder text
-- Add placeholder images
-- Add CSS styling
-- Add media queries
+- Add sub-pages
+- Implement zoom in feature
+- Implement zoom out feature
+- Implement translation feature
