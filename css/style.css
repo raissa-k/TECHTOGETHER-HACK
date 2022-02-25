@@ -157,26 +157,27 @@ height: 8rem;
   padding: 5% 10% 10% 10%;
 }
 
+
 .sectionMiddle h2 {
-    font-size: calc(1rem + 2vw);
+    font-size: 4rem;
   }
 
 .sectionMiddle p {
-    font-size: calc(1rem + 0.5vw);
+    font-size: 1.5rem;
     text-align: center;
     line-height: 1.5;
-    padding: 2% 30% 7% 30%;
+    padding: 0% 10% 0% 10%;
   }
 
 .sectionContent {
   padding: 2% 5% 2% 5%;
   display:flex;
-  justify-content:space-between;
 }
 
 .sectionContent img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
+  border-radius: 10px;
   padding-bottom: 2%;
 }
 
@@ -198,13 +199,13 @@ height: 8rem;
 
 .section401 h3, .section403 h3 {
   padding-top: 2%;
-  font-size: calc(1.5rem + 0.5vw);
+  font-size: 2rem;
   font-weight: bolder;
   text-shadow: 1px 1px 2px #353d46;
 }
 
 .section401 p, .section403 p {
-  font-size: calc(1rem + 0.3vw);
+  font-size: 1.5rem;
   line-height: 1.5;
   padding: 5% 0 5% 0;
 }
@@ -231,19 +232,15 @@ button {
 background-color: black;
 line-height: 120%;
 color: #131518;
-font-size: calc(1rem + 0.3vw);
+font-size: 1rem;
 display:flex;
-background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(https://pbs.twimg.com/media/DFLsvIuXgAALTpV?format=jpg&name=large) top no-repeat;
+background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center no-repeat;
 background-size: cover;
 text-shadow: 1px 1px 2px #353d46;
 }
 
-.footerLeft {
-  text-align: left;
+.footerWow section {
   padding: 5%;
+  text-align: center;
 }
 
-.footerRight {
-  text-align: right;
-  padding: 5%;
-}
