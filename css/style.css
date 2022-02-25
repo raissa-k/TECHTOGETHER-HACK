@@ -1,0 +1,244 @@
+/* Box Model Hack */
+* {
+box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+  font-weight: lighter;
+  font-family: sans-serif;
+
+}
+
+* {
+  padding: 0;
+  margin: auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header, section, footer{
+width: 100%;
+}
+
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+
+@media screen and (max-width: 768px){
+  
+.sectionWhy p {
+  padding: 2% 10% 5% 10%;
+}
+
+.sectionVideos {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.videoLeft.float, .videoRight.float {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+nav {
+  font-size: 1.5rem;
+  flex-direction: column-reverse;
+}
+
+nav span {
+  padding-bottom: 1%;
+}
+
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+header{
+background-color:#ffffff;
+height:fit-content;
+display: flex;
+}
+
+nav {
+width: 100%;
+height: fit-content;
+color: #000000;
+text-align: center;
+display:flex;
+font-size: 2rem;
+}
+
+.headerLogo {
+height: 8rem;
+}
+
+
+
+/******************************************
+/* BODY
+/*******************************************/
+
+.sectionGrit {
+  background-color: #8499B1;
+  height: fit-content;
+  color: #ffffff;
+  background: linear-gradient(to bottom,#707070, rgba(255, 255, 255, 0)), url(https://images.unsplash.com/photo-1615568057392-8f933710de76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size:cover;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 2px #353d46;
+}
+
+.sectionGrit h1, .sectionWhy h2, .sectionBottom h2{
+  font-size: calc(2rem + 3vw);
+  font-variant: small-caps;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-top: 5%;
+  text-shadow: 1px 1px 2px #8499B1;
+}
+
+.sectionGrit p {
+  font-size: calc(1rem + 1vw);
+  text-align: center;
+  padding: 5% 10% 0% 10%;
+}
+
+.sectionGrit p+p {
+  font-size: 1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+  padding: 5% 0 5% 0;
+}
+
+.playButton {
+  display: inline-block;
+  height: calc(1rem + 1.5vw);
+  filter: invert(100%);
+  vertical-align: middle;
+  padding-right: 1%;
+}
+
+.sectionWhy h2, .sectionBottom h2 {
+    font-size: calc(1rem + 2vw);
+  }
+
+.sectionWhy p, .sectionBottom p {
+    font-size: calc(1rem + 0.5vw);
+    text-align: center;
+    line-height: 1.5;
+    padding: 2% 30% 7% 30%;
+  }
+
+.sectionVideos {
+  border: 1px solid black;
+  background-color: #bebfc1;
+  padding: 2% 5% 2% 5%;
+  display:flex;
+  justify-content:space-between;
+  background: url(https://images.unsplash.com/photo-1513030226361-d6870df29368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center no-repeat;
+  background-size: cover;
+}
+
+.sectionVideos img {
+  max-width: 50%;
+  height: auto;
+  padding-bottom: 2%;
+}
+
+.videoLeft, .videoRight {
+  width: 50%;
+  border: none;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.videoLeft {
+  padding-right: 3%;
+}
+
+.videoRight {
+  padding-left: 3%;
+}
+
+.videoLeft h3, .videoRight h3 {
+  padding-top: 2%;
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #353d46;
+}
+
+.videoLeft p, .videoRight p {
+  font-size: calc(1rem + 0.3vw);
+  line-height: 1.5;
+  padding: 5% 0 5% 0;
+}
+
+.sectionVideos button, .sectionBottom button {
+  padding: 0% 2%;
+  color:#000000;
+  text-shadow: 1px 1px 2px #353d46;
+  font-size: 100%;
+  font-weight: bolder;
+  border: #353d46 solid 0.1rem;
+  height: 7vh;
+  background: transparent;
+}
+
+.sectionBottom {
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.sectionBottom p {
+  padding-bottom: 2%;
+}
+
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+.footerWow {
+background-color: black;
+line-height: 120%;
+color: #131518;
+font-size: calc(1rem + 0.3vw);
+display:flex;
+background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(https://pbs.twimg.com/media/DFLsvIuXgAALTpV?format=jpg&name=large) top no-repeat;
+background-size: cover;
+text-shadow: 1px 1px 2px #353d46;
+}
+
+.footerLeft {
+  text-align: left;
+  padding: 5%;
+}
+
+.footerRight {
+  text-align: right;
+  padding: 5%;
+}
