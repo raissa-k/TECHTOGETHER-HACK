@@ -141,7 +141,7 @@ height: 8rem;
 }
 
 .sectionBanner h1, .sectionMiddle h2 {
-  font-size: calc(2rem + 3vw);
+  font-size: 5rem;
   font-variant: small-caps;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -151,7 +151,7 @@ height: 8rem;
 }
 
 .sectionBanner p {
-  font-size: calc(1rem + 1vw);
+  font-size: 2rem;
   text-align: center;
   line-height: 150%;
   padding: 5% 10% 10% 10%;
@@ -217,7 +217,7 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  height: 7vh;
+  height: 5rem;
   border: solid 1px #063d5d;
   border-radius: 10px;
   background-color: #063d5d;
@@ -234,7 +234,7 @@ line-height: 120%;
 color: #131518;
 font-size: 1rem;
 display:flex;
-background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center no-repeat;
+background: linear-gradient(to bottom,rgb(255, 255, 255), rgba(255, 255, 255, 0)), url(https://images.unsplash.com/photo-1562088746-125fc60079ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) top no-repeat;
 background-size: cover;
 text-shadow: 1px 1px 2px #353d46;
 }
