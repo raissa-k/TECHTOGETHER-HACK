@@ -174,22 +174,15 @@ height: 8rem;
 /*******************************************/
 
 .sectionBanner {
-  background-color: #8499B1;
   height: fit-content;
-  color: #000000;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.607) 35%, rgba(255,255,255,1) 100%), url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
-  background-position: center;
-  background-size:cover;
-  background-repeat: no-repeat;
-  text-shadow: 1px 1px 2px #353d46;
 }
 
 .sectionBanner h1, .sectionMiddle h2 {
   font-size: 5rem;
   font-variant: small-caps;
+  padding-top: 2%;
   text-align: center;
   letter-spacing: 0.1rem;
-  padding-top: 5%;
   color: #063d5d;
   text-shadow: 1px 1px 2px #8499B1;
 }
@@ -198,7 +191,7 @@ height: 8rem;
   font-size: 2rem;
   text-align: center;
   line-height: 150%;
-  padding: 5% 10%;
+  padding: 5% 10% 10% 10%;
 }
 
 
@@ -218,6 +211,14 @@ height: 8rem;
   display:flex;
 }
 
+.sectionContent > section {
+  border: none;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 1%;
+}
+
 .sectionContent img {
   max-width: 100%;
   height: auto;
@@ -226,15 +227,7 @@ height: 8rem;
 }
 
 .section401, .section403 {
-  width: 50%;
-}
-
-.sectionContent > section {
-  border: none;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-top: 0;
+  width: 40%;
 }
 
 .section401 {
@@ -243,6 +236,7 @@ height: 8rem;
 
 .section403 {
   padding-left: 3%;
+  display: none;
 }
 
 .section401 h3, .section403 h3 {
@@ -269,6 +263,11 @@ button {
   border: solid 1px #063d5d;
   border-radius: 10px;
   background-color: #063d5d;
+}
+
+.sectionMiddle button {
+  height: auto;
+  padding: 2%;
 }
 
 

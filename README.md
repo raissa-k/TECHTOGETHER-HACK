@@ -9,4 +9,3 @@
 To-do:
 - Implement zoom in feature
 - Implement zoom out feature
-- Implement translation feature
