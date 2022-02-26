@@ -5,11 +5,8 @@ document.getElementById('401ListenButton').onclick = function(){
     speechSynthesis.speak(utterance401k);
 };
 
-document.getElementById('403ListenButton').onclick = function(){
-    var text = document.getElementById('home403Paragraph').innerText;
-    utterance403b = new SpeechSynthesisUtterance();
-    utterance403b.text = text;
-    speechSynthesis.speak(utterance403b);
+document.getElementById('403BButton').onclick = function(){
+    document.getElementById('401kCalcResults').style.display = 'block'
 };
 
 document.getElementById('zoomInButton').onclick = function() {

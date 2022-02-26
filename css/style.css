@@ -206,13 +206,6 @@ height: 8rem;
     font-size: 4rem;
   }
 
-.sectionMiddle p {
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.5;
-    padding: 0% 10% 0% 10%;
-  }
-
 .sectionContent {
   padding: 2% 5% 2% 5%;
   display:flex;
@@ -252,11 +245,13 @@ height: 8rem;
   text-shadow: 1px 1px 2px #353d46;
 }
 
-.section401 p, .section403 p {
+.section401 p, .sectionMiddle p, .section403 p {
   font-size: 1.5rem;
   line-height: 1.5;
-  padding: 5% 0 5% 0;
+  text-align: center;
+  padding: 5%;
 }
+
 
 button {
   padding: 5%;

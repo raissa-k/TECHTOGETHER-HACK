@@ -5,10 +5,21 @@ document.getElementById('401ListenButton').onclick = function(){
     speechSynthesis.speak(utterance401k);
 };
 
-document.getElementById('403Button').onclick = function(){
+document.getElementById('403BButton').onclick = function(){
     document.getElementById('401kCalcResults').style.display = 'block'
 };
 
-document.querySelector("#zoomInButton").addEventListener.onclick = function() {
-    document.html.style.fontSize = "+10%";
-  };
+document.getElementById('zoomInButton').onclick = function() {
+	x=document.querySelector('html')
+    x.style.fontSize= '120%';
+}
+
+document.getElementById('zoomOutButton').onclick = function() {
+	x=document.querySelector('html')
+    x.style.fontSize= '45%';
+}
+
+document.getElementById('zoomNormalButton').onclick = function() {
+	x=document.querySelector('html')
+    x.style.fontSize= '62.5%';
+}
