@@ -232,18 +232,38 @@ height: 8rem;
 /*   display: none; */
 }
 
-.section401 h3, .section403 h3 {
+h2, h3 {
   padding-top: 2%;
   font-size: 2rem;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px #353d46;
+  text-shadow: 1px 1px 2px #bebebe;
 }
 
-.section401 p, .sectionMiddle p, .section403 p {
+h2 {
+  font-size: 1.5rem;
+}
+
+.section401 p, .sectionMiddle p, .section403 p, form {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: center;
   padding: 5%;
+}
+
+form div {
+  display: flex;
+  padding: 2% 0;
+  justify-content: space-between;
+}
+
+input {
+  width: 30%;
+  font-size: 1rem;
+}
+
+label {
+  text-align: left;
+  margin: 0;
 }
 
 button {
