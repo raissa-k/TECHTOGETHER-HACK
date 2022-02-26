@@ -200,7 +200,7 @@ height: 8rem;
   }
 
 .sectionContent {
-  padding: 2% 5% 2% 5%;
+  padding: 1% 2% 1% 2%;
   display:flex;
 }
 
@@ -219,8 +219,8 @@ height: 8rem;
   padding-bottom: 2%;
 }
 
-.section401, .section403 {
-  width: 40%;
+.section401/* , .section403 */ {
+  width: 50%;
 }
 
 .section401 {
@@ -229,7 +229,7 @@ height: 8rem;
 
 .section403 {
   padding-left: 3%;
-  display: none;
+/*   display: none; */
 }
 
 .section401 h3, .section403 h3 {
