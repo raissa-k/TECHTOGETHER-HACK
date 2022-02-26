@@ -57,25 +57,57 @@
 	</section>
 
 		<section class="sectionContent">
-			<section class="section401">
-				<img src="https://investorjunkie.com/wp-content/uploads/2018/05/403b-vs-401k-1-775x470.jpg" alt="A picture of a leatherbound notebook, a calculator and a stack of papers titled 403b plan.">
-				<h2>What should you keep in mind?</h3>
+			<section class="section401" id="home401Paragraph">
+				<img src="https://investorjunkie.com/wp-content/uploads/2018/05/403b-vs-401k-1-775x470.jpg" alt="A picture of a leatherbound notebook, a calculator and a stack of papers titled 
+				403b plan.">
+
 				<button id="401ListenButton" class="listenButton" aria-label="Convert the paragraph below to speech.">
 					<figure class="accessIcon">
 						<svg id="401ListenIcon" alt="A human ear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M412.6 182c-10.28-8.334-25.41-6.867-33.75 3.402c-8.406 10.24-6.906 25.35 3.375 33.74C393.5 228.4 400 241.8 400 255.1c0 14.17-6.5 27.59-17.81 36.83c-10.28 8.396-11.78 23.5-3.375 33.74c4.719 5.806 11.62 8.802 18.56 8.802c5.344 0 10.75-1.779 15.19-5.399C435.1 311.5 448 284.6 448 255.1S435.1 200.4 412.6 182zM473.1 108.2c-10.22-8.334-25.34-6.898-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C476.6 172.1 496 213.3 496 255.1s-19.44 82.1-53.31 110.7c-10.25 8.396-11.75 23.5-3.344 33.74c4.75 5.775 11.62 8.771 18.56 8.771c5.375 0 10.75-1.779 15.22-5.431C518.2 366.9 544 313 544 255.1S518.2 145 473.1 108.2zM534.4 33.4c-10.22-8.334-25.34-6.867-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C559.9 116.3 592 183.9 592 255.1s-32.09 139.7-88.06 185.5c-10.25 8.396-11.75 23.5-3.344 33.74C505.3 481 512.2 484 519.2 484c5.375 0 10.75-1.779 15.22-5.431C601.5 423.6 640 342.5 640 255.1S601.5 88.34 534.4 33.4zM301.2 34.98c-11.5-5.181-25.01-3.076-34.43 5.29L131.8 160.1H48c-26.51 0-48 21.48-48 47.96v95.92c0 26.48 21.49 47.96 48 47.96h83.84l134.9 119.8C272.7 477 280.3 479.8 288 479.8c4.438 0 8.959-.9314 13.16-2.835C312.7 471.8 320 460.4 320 447.9V64.12C320 51.55 312.7 40.13 301.2 34.98z"/></svg>
 					</figure>
 				</button>
-				<p id="home401Paragraph">This is totally not a test, is it? Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. </p>
+
+				<h2>What should you keep in mind?</h3>
+			
+				<p>Just like 401(k) accounts, employees must wait until they are 59½ years old to withdraw and have a choice of two types of 403(b) accounts: Traditional and Roth.</p>
+				<p>Similar to Traditional 401(k) accounts, Traditional 403(b) contributions are taken from pre-taxed income and then taxed upon withdrawal during retirement. Early withdrawals are subject to a 10 percent penalty.</p>
+				<p>Roth 403(c) are akin to Roth 401(k) accounts in many ways. Contributions are taken from already-taxed income and available for withdrawal upon retirement. Early withdrawals will result in penalty fees on the earnings.</p>
 			</section>
 
 			<section class="sectionMiddle">
-				<h2>calculator comes here</h2>
-				<p>I see a bird i stare at it i meow at it i do a wiggle come here birdy flex claws on the human's belly and purr like a lawnmower and mrow, snob you for another person jump around on couch, meow constantly until given food, asdflkjaertvlkjasntvkjn (sits on keyboard). Making bread on the bathrobe shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff more napping, more napping all the napping is exhausting.</p>
-				<button type="button" id="403BButton">Show Results</button></a>
+				<h3>Calculate your 401(k) balance on retirement</h3>
+					
+				<form class="401kCalculatorSimple">
+					<div>
+						<label for="401kbalance">Current 401(k) balance</label>
+						<input name="401kbalance" id="value401k" type="number" placeholder="12345"  type="number" min="0" step="100" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+					</div>
+
+					<div>
+						<label for="monthlyCont">Monthly contribution <br>(yours + employer's)</label>
+						<input name="monthlyCont" id="monthlycont" type="number" placeholder="12345"  type="number" min="0" step="10" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+					</div>
+
+					<div>
+						<label for="annualRate">Annual Return Rate</label>
+						<input name="annualRate" id="annualrate" type="number" min="0" step="0.01" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)"  placeholder="In decimals, e.g 0.03" aria-placeholder="In decimals, as in 0.03 for 3%">
+					</div>
+
+					<div>
+						<label for="yearsAhead">Years until retirement</label>
+						<input name="yearsAhead" id="yearsleft" placeholder="35" type="number" min="0" step="1" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+					</div>
+
+				</form>
+
+				<button type="button" id="compute">Show Results</button>
+				<button type="button" id="reset">Reset Fields</button>
+
+				<h4 id="401kCalcResults">Upon retirement, the amount in your 401(k) account will be: US$<span id="placeForValue">.</h4>
 		</section>
 			
-			<section class="section403" id="401kCalcResults">
-				<h3>Understand your results</h3>
+			<section class="section403">
+				<h3>Calculate Y</h3>
 				<p>Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle.</p>
 			</section>
 	</section>

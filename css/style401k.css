@@ -68,6 +68,7 @@ a:focus, button:focus, a:active, button:active {
 .sectionContent .section401, .sectionContent .section403 {
   padding-left: 0%;
   padding-right: 0%;
+  width: 100%;
 }
 
 nav {

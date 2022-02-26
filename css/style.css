@@ -75,6 +75,10 @@ nav {
   flex-direction: column-reverse;
 }
 
+section .section401, section .section403 {
+  width: 100%;
+}
+
 nav span {
   padding-bottom: 1%;
 }
@@ -252,6 +256,9 @@ height: 8rem;
   padding: 5%;
 }
 
+.sectionMiddle p+p {
+  padding-top: 0%;
+}
 
 button {
   padding: 5%;
