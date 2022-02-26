@@ -243,6 +243,11 @@ h2, h4 {
   font-size: 1.5rem;
 }
 
+h4 {
+  padding-top: 5%;
+  display: none;
+}
+
 .section401 p, .sectionMiddle p, .section403 p, form {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -277,6 +282,7 @@ button {
   border: solid 1px #063d5d;
   border-radius: 10px;
   background-color: #063d5d;
+  margin: 1% 1% 2% 1%;
 }
 
 .sectionMiddle button {
