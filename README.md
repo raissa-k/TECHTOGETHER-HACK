@@ -7,5 +7,7 @@
 > JavaScript
 
 To-do:
-- Implement zoom in feature
-- Implement zoom out feature
+- Add 403b text
+- Add 403b first calculator for total future amount
+- Add 403b second calculator for maximum safe withdrawal
+- Add 401k second calculator for maximum safe withdrawal
