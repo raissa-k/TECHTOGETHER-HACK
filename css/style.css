@@ -23,7 +23,6 @@ clear: both;
 
 html {
   font-size: 62.5%;
-  font-weight: lighter;
   font-family: sans-serif;
 
 }
@@ -89,6 +88,39 @@ nav span {
 /******************************************
 /* HEADER
 /*******************************************/
+
+.accessButton {
+  padding: 0 5%;
+  color:#000000;
+  text-shadow: 0px 0px 0px #353d46;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  height: 3rem;
+  width: 3rem;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  background-color: #c2cad3;
+}
+
+.accessIcon img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.listenButton {
+  color:#000000;
+  text-shadow: 0px 0px 0px #353d46;
+  padding: 0.5%;
+  margin: auto;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  background-color: #ffffff;
+  display: flex;
+  align-self: center;
+}
+
 
 a {
   color: #063d5d;

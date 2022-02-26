@@ -8,8 +8,8 @@
 		
 		<title>TechTogether Chicago - Capital Hack</title>
 
-		<link rel="shortcut icon" href="/hackicon.ico" type="image/x-icon">
-		<link rel="icon" href="/hackicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="hackicon.ico" type="image/x-icon">
+		<link rel="icon" href="hackicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
@@ -28,21 +28,17 @@
 
 				<div class="navAccess">
 
-					<figure class="accessIcon">
-						<svg id="translateIcon" alt="Icon with the letter A and a Chinese character side by side to signify translation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448 164C459 164 468 172.1 468 184V188H528C539 188 548 196.1 548 208C548 219 539 228 528 228H526L524.4 232.5C515.5 256.1 501.9 279.1 484.7 297.9C485.6 298.4 486.5 298.1 487.4 299.5L506.3 310.8C515.8 316.5 518.8 328.8 513.1 338.3C507.5 347.8 495.2 350.8 485.7 345.1L466.8 333.8C462.4 331.1 457.1 328.3 453.7 325.3C443.2 332.8 431.8 339.3 419.8 344.7L416.1 346.3C406 350.8 394.2 346.2 389.7 336.1C385.2 326 389.8 314.2 399.9 309.7L403.5 308.1C409.9 305.2 416.1 301.1 422 298.3L409.9 286.1C402 278.3 402 265.7 409.9 257.9C417.7 250 430.3 250 438.1 257.9L452.7 272.4L453.3 272.1C465.7 259.9 475.8 244.7 483.1 227.1H376C364.1 227.1 356 219 356 207.1C356 196.1 364.1 187.1 376 187.1H428V183.1C428 172.1 436.1 163.1 448 163.1L448 164zM160 233.2L179 276H140.1L160 233.2zM0 128C0 92.65 28.65 64 64 64H576C611.3 64 640 92.65 640 128V384C640 419.3 611.3 448 576 448H64C28.65 448 0 419.3 0 384V128zM320 384H576V128H320V384zM178.3 175.9C175.1 168.7 167.9 164 160 164C152.1 164 144.9 168.7 141.7 175.9L77.72 319.9C73.24 329.1 77.78 341.8 87.88 346.3C97.97 350.8 109.8 346.2 114.3 336.1L123.2 315.1H196.8L205.7 336.1C210.2 346.2 222 350.8 232.1 346.3C242.2 341.8 246.8 329.1 242.3 319.9L178.3 175.9z"/></svg>
-						<figcaption>Translate page</figcaption>
-					</figure>
+						<button id="zoomInButton" class="accessButton">
+							<figure class="accessIcon">
+								<img id="zoomInIcon" alt="A sign of A plus, signifying increasing font size" src="https://www.svgrepo.com/show/79380/a-plus.svg">
+							</figure>
+						</button>
 
-
-					<figure class="accessIcon">
-						<svg id="zoomInIcon" alt="Magnifying glass with plus sign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"/></svg>
-						<figcaption>Zoom in</figcaption>
-					</figure>
-
-					<figure class="accessIcon">
-						<svg id="zoomOutIcon" alt="Magnifying glass with minus sign" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24h160C301.3 184 312 194.7 312 208S301.3 232 288 232z"/></svg>
-						<figcaption>Zoom out</figcaption>
-					</figure>
+					<button id="zoomOutButton" class="accessButton">
+						<figure class="accessIcon">
+							<img id="zoomOutIcon" alt="A sign of A minus, signifying decreasing font size" src="https://www.svgrepo.com/show/4567/a-minus-result.svg">
+						</figure>
+					</button>
 				</div>
 
 			</nav>
@@ -57,8 +53,15 @@
 			<section class="sectionContent">
 				<section class="section401">
 					<img src="https://media.cnn.com/api/v1/images/stellar/prod/200611122339-underscored-401k-piggy-bank.jpg?q=x_28,y_96,h_1684,w_2993,c_crop/h_720,w_1280" alt="A picture of a smiling piggy bank next to four piles of coins, each one bigger than the previous one. On top of each pile is a wooden block with a letter to form the word 401k">
+
+					<button id="401ListenButton" class="listenButton">
+						<figure class="accessIcon">
+							<svg id="401ListenIcon" alt="A human ear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M412.6 182c-10.28-8.334-25.41-6.867-33.75 3.402c-8.406 10.24-6.906 25.35 3.375 33.74C393.5 228.4 400 241.8 400 255.1c0 14.17-6.5 27.59-17.81 36.83c-10.28 8.396-11.78 23.5-3.375 33.74c4.719 5.806 11.62 8.802 18.56 8.802c5.344 0 10.75-1.779 15.19-5.399C435.1 311.5 448 284.6 448 255.1S435.1 200.4 412.6 182zM473.1 108.2c-10.22-8.334-25.34-6.898-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C476.6 172.1 496 213.3 496 255.1s-19.44 82.1-53.31 110.7c-10.25 8.396-11.75 23.5-3.344 33.74c4.75 5.775 11.62 8.771 18.56 8.771c5.375 0 10.75-1.779 15.22-5.431C518.2 366.9 544 313 544 255.1S518.2 145 473.1 108.2zM534.4 33.4c-10.22-8.334-25.34-6.867-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C559.9 116.3 592 183.9 592 255.1s-32.09 139.7-88.06 185.5c-10.25 8.396-11.75 23.5-3.344 33.74C505.3 481 512.2 484 519.2 484c5.375 0 10.75-1.779 15.22-5.431C601.5 423.6 640 342.5 640 255.1S601.5 88.34 534.4 33.4zM301.2 34.98c-11.5-5.181-25.01-3.076-34.43 5.29L131.8 160.1H48c-26.51 0-48 21.48-48 47.96v95.92c0 26.48 21.49 47.96 48 47.96h83.84l134.9 119.8C272.7 477 280.3 479.8 288 479.8c4.438 0 8.959-.9314 13.16-2.835C312.7 471.8 320 460.4 320 447.9V64.12C320 51.55 312.7 40.13 301.2 34.98z"/></svg>
+						</figure>
+					</button>
+
 					<h3>What's a 401(k)?</h3>
-					<p>Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. </p>
+					<p id="home401Paragraph">Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. </p>
 					<a href="/401k.html" aria-label="Go to 401K calculator"><button type="button" name="button" id="401kbutton">401(K) CALCULATOR</button></a>
 				</section>
 
@@ -69,8 +72,15 @@
 				
 				<section class="section403">
 					<img src="https://cdn.shrm.org/image/upload/c_crop,h_408,w_724,x_0,y_0/c_fit,f_auto,q_auto,w_767/v1/Benefits/403b_plan_phpb1q?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjAsIngyIjo3MjQsInkyIjo0MDgsInciOjcyNCwiaCI6NDA4fX0%3d" alt="A picture of a white piggy bank with 403b written on it">
+
+					<button id="403ListenButton" class="listenButton">
+						<figure class="accessIcon">
+							<svg id="403ListenIcon" alt="A human ear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M412.6 182c-10.28-8.334-25.41-6.867-33.75 3.402c-8.406 10.24-6.906 25.35 3.375 33.74C393.5 228.4 400 241.8 400 255.1c0 14.17-6.5 27.59-17.81 36.83c-10.28 8.396-11.78 23.5-3.375 33.74c4.719 5.806 11.62 8.802 18.56 8.802c5.344 0 10.75-1.779 15.19-5.399C435.1 311.5 448 284.6 448 255.1S435.1 200.4 412.6 182zM473.1 108.2c-10.22-8.334-25.34-6.898-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C476.6 172.1 496 213.3 496 255.1s-19.44 82.1-53.31 110.7c-10.25 8.396-11.75 23.5-3.344 33.74c4.75 5.775 11.62 8.771 18.56 8.771c5.375 0 10.75-1.779 15.22-5.431C518.2 366.9 544 313 544 255.1S518.2 145 473.1 108.2zM534.4 33.4c-10.22-8.334-25.34-6.867-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C559.9 116.3 592 183.9 592 255.1s-32.09 139.7-88.06 185.5c-10.25 8.396-11.75 23.5-3.344 33.74C505.3 481 512.2 484 519.2 484c5.375 0 10.75-1.779 15.22-5.431C601.5 423.6 640 342.5 640 255.1S601.5 88.34 534.4 33.4zM301.2 34.98c-11.5-5.181-25.01-3.076-34.43 5.29L131.8 160.1H48c-26.51 0-48 21.48-48 47.96v95.92c0 26.48 21.49 47.96 48 47.96h83.84l134.9 119.8C272.7 477 280.3 479.8 288 479.8c4.438 0 8.959-.9314 13.16-2.835C312.7 471.8 320 460.4 320 447.9V64.12C320 51.55 312.7 40.13 301.2 34.98z"/></svg>
+						</figure>
+					</button>
+
 					<h3>What's a 403(b)?</h3>
-					<p>Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle.</p>
+					<p id="home403Paragraph">Oh, no! Lies down run around the house at 4 in the morning yet bite nose of your human. For my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so... carefully drink from water glass and then spill it everywhere and proceed to lick the puddle.</p>
 					<a href="/403b.html" aria-label="Go to 403B calculator"><button type="button" name="button" id="403bbutton">403(b) CALCULATOR</button></a>
 				</section>
 		</section>
