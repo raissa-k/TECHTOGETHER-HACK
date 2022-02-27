@@ -5,10 +5,6 @@ document.getElementById('401ListenButton').onclick = function(){
     speechSynthesis.speak(utterance401k);
 };
 
-/* document.getElementById('403BButton').onclick = function(){
-    document.getElementById('401kCalcResults').style.display = 'block'
-}; */
-
 document.getElementById('zoomInButton').onclick = function() {
 	x=document.querySelector('html')
     x.style.fontSize= '120%';
@@ -25,7 +21,6 @@ document.getElementById('zoomNormalButton').onclick = function() {
 }
 
 document.querySelector('#compute').addEventListener('click',amount401k)
-//document.querySelector('#reset').addEventListener('click',reset)
 
 function amount401k(){
     const currentBalance = document.querySelector('#value401k').value
@@ -44,6 +39,6 @@ function amount401k(){
     document.getElementById('401kCalcResults').style.display = 'block' 
 }
 
-/* function reset(){
-
-} */
+document.querySelector('#reset').onclick = function() {
+    document.getElementById('form401kBalance').reset()
+}

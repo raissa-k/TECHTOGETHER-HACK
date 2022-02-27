@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" href="hackicon.ico" type="image/x-icon">
 		<link rel="icon" href="hackicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style401k.css">
+		<link rel="stylesheet" href="css/stylesub.css">
 
 	</head>
 	<body>
@@ -73,25 +73,25 @@
 				<section class="sectionMiddle">
 					<h3>Calculate your 401(k) balance on retirement</h3>
 					
-					<form class="401kCalculatorSimple">
+					<form class="401kCalculatorSimple" id="form401kBalance">
 						<div>
 							<label for="401kbalance">Current 401(k) balance</label>
-							<input name="401kbalance" id="value401k" type="number" placeholder="12345"  type="number" min="0" step="100" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+							<input name="401kbalance" id="value401k" placeholder="12345" type="number" min="0" step="100">
 						</div>
 
 						<div>
 							<label for="monthlyCont">Monthly contribution <br>(yours + employer's)</label>
-							<input name="monthlyCont" id="monthlycont" type="number" placeholder="12345"  type="number" min="0" step="10" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+							<input name="monthlyCont" id="monthlycont" placeholder="12345"  type="number" min="0" step="10">
 						</div>
 
 						<div>
 							<label for="annualRate">Annual Return Rate</label>
-							<input name="annualRate" id="annualrate" type="number" min="0" step="0.01" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)"  placeholder="In decimals, e.g 0.03" aria-placeholder="In decimals, as in 0.03 for 3%">
+							<input name="annualRate" id="annualrate" type="number" min="0" step="0.01"  placeholder="In decimals, e.g 0.03" aria-placeholder="In decimals, as in 0.03 for 3%">
 						</div>
 
 						<div>
 							<label for="yearsAhead">Years until retirement</label>
-							<input name="yearsAhead" id="yearsleft" placeholder="35" type="number" min="0" step="1" onfocus="this.previousValue = this.value" onkeydown="this.previousValue = this.value" oninput="validity.valid || (value = this.previousValue)">
+							<input name="yearsAhead" id="yearsleft" placeholder="35" type="number" min="0" step="1">
 						</div>
 
 					</form>
