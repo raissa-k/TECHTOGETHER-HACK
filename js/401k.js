@@ -40,6 +40,7 @@ function amount401k(){
 } */
 
 document.querySelector('#compute').addEventListener('click',amount401k)
+//document.querySelector('#reset').addEventListener('click',reset)
 
 function amount401k(){
     const currentBalance = document.querySelector('#value401k').value
@@ -48,7 +49,7 @@ function amount401k(){
     const catchup = document.querySelector('#catchupamount').value/100 //extra contribution amount after 50//
     const currentage = document.querySelector('#currentage').value 
     const rtmtage = document.querySelector('#rtmtage').value
-    const r = document.querySelector('#annualrate').value/100 
+    const r = document.querySelector('#annualrate').value/100
     const N = rtmtage - currentage
     const catchupage = 50-currentage
     const intrate= Math.pow((1 + r/k) , N*k)
@@ -68,14 +69,14 @@ function amount401k(){
        // let otherperiodnumerator = d * (otherperiodintrate -1)
         let otherperiodsvalue = numerator / denominator
         let value = catchupperiodsvalue + otherperiodsvalue + currentBalance
-        document.querySelector('#placeForValue').innerText = value
-        document.getElementById('401kCalcResults').style.display = 'block' 
+        document.querySelector('#placeForValue').innerText = value 
 
     } else if ( catchup === "" || catchup === "0"){
         let value = numerator / denominator
         value = (value + currentBalance) 
          document.querySelector('#placeForValue').innerText = value 
     }
+
 }
 
 document.querySelector('#estimate').addEventListener('click', calculate)
@@ -97,7 +98,6 @@ function calculate() {
     let denominator = growthP / 12
     let retirementAmount = numerator / denominator
     document.querySelector('#placeForEst').innerText = retirementAmount
-    document.getElementById('401kProjResults').style.display = 'block' 
 }
 
 

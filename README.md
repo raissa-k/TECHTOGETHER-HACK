@@ -7,7 +7,5 @@
 > JavaScript
 
 To-do:
-- Add 403b text
-- Add 403b first calculator for total future amount
-- Add 403b second calculator for maximum safe withdrawal
-- Add 401k second calculator for maximum safe withdrawal
+- Possibly add a page with more information about the plans
+- Fix the calculation with the catch up input and age over 50

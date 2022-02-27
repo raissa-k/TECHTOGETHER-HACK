@@ -99,16 +99,15 @@
 						</div>
 
 						<div>
-							<label for="catchupAmount">For those over 50:<br>catch up amount (percentage)</label>
-							<input name="catchupAmount" id="catchupamount" type="number" min="0" step="1" placeholder="3" aria-placeholder="The percentage number without the % sign">
+							<label for="catchupAmount">Catch up amount %</label>
+							<input name="catchupAmount" id="catchupamount" type="number" min="0" step="1" placeholder="80" aria-placeholder="The percentage number without the % sign" aria-describedby="describeCatchup">
 						</div>
-
+						<span id="describeCatchup">Catch up amount is an option for those over 50, up to US$541 a month. Input what % of that you will contribute, leave blank if no catch up contributions will be made.</span>
 					</form>
-
 					<button type="button" id="compute">Show Results</button>
 					<button type="button" id="reset401Calc">Reset Fields</button>
 
-					<h4 id="401kCalcResults">Upon retirement, the amount in your 401(k) account will be: US$<span id="placeForValue">.</h4>
+					<h4 id="401kCalcResults">Upon retirement, the amount in your 401(k) account will be: US$<span id="placeForValue"></span></h4>
 			</section>
 				
 				<section class="section403">

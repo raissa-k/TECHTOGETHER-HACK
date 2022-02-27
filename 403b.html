@@ -103,16 +103,22 @@
 					</div>
 
 					<div>
-						<label for="catchupAmount">For those over 50:<br>catch up amount (percentage)</label>
-						<input name="catchupAmount" id="catchupamount" type="number" min="0" step="1" placeholder="3" aria-placeholder="The percentage number without the % sign">
+						<label for="catchupAmount">Catch up amount %</label>
+						<input name="catchupAmount" id="catchupamount" type="number" min="0" step="1" placeholder="80" aria-placeholder="The percentage number without the % sign" aria-describedby="describeCatchup">
 					</div>
+					<span id="describeCatchup">Catch up amount is an option for those over 50, up to US$541 a month. Input what % of that you will contribute, leave blank if no catch up contributions will be made.</span>
 
 				</form>
 
 				<button type="button" id="compute">Show Results</button>
 				<button type="button" id="reset401Calc">Reset Fields</button>
 
-				<h4 id="401kCalcResults">Upon retirement, the amount in your 403(b) account will be: US$<span id="placeForValue">.</h4>
+				<div class="hideThis" id="401kCalcResults">
+					<h4>Upon retirement, the amount in your 403(b) account will be: US$<span id="placeForValue"></span></h4>
+					<h4>With an average fee of 0.07%, you would have: US$<span id="indexResult"></span>.</h4>
+					<h4>With an average fee of 1.74%, you would have: US$<span id="mutualResult"></span>.</h4>
+					<h4>With an average fee of 3%, you would have: US$<span id="variableResult"></span>.</h4>
+				</div>
 		</section>
 			
 			<section class="section403">
@@ -143,7 +149,9 @@
 				<button id="reset401Projection" type="button">Reset</button>
 			</form>
 			
-			<h4 id="401kProjResults">Your projected retirement amount is: US$ <span id="placeForEst">.</h4>
+			<div class="hideThis" id="401kProjResults">
+			<h4>Your projected retirement amount is: US$ <span id="placeForEst">.</h4>
+			</div>
 			</section>
 	</section>
 	</main>

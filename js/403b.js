@@ -39,7 +39,9 @@ function amount401k(){
     document.getElementById('401kCalcResults').style.display = 'block' 
 } */
 
+
 document.querySelector('#compute').addEventListener('click',amount401k)
+//document.querySelector('#reset').addEventListener('click',reset)
 
 function amount401k(){
     const currentBalance = document.querySelector('#value401k').value
@@ -48,35 +50,89 @@ function amount401k(){
     const catchup = document.querySelector('#catchupamount').value/100 //extra contribution amount after 50//
     const currentage = document.querySelector('#currentage').value 
     const rtmtage = document.querySelector('#rtmtage').value
-    const r = document.querySelector('#annualrate').value/100 
+    const r = document.querySelector('#annualrate').value/100
     const N = rtmtage - currentage
     const catchupage = 50-currentage
-    const intrate= Math.pow((1 + r/k) , N*k)
-    const numerator = d * (intrate - 1)
-    const denominator = r/k
-   // const growth = 0.05
-    //const estgrowth = Math.pow((1 + growth/k),k*N)
+
+    //Index fund 0.07% fee
+    const intrateIndex = Math.pow((1 + (r-0.0007)/k) , N*k)
+    const numeratorIndex = d * (intrateIndex -1)
+    const denominatorIndex = (r-0.00007)/k
+
+    //Mutual fund 1.74% fee
+    const intrateMutual = Math.pow((1 + (r-0.0174)/k) , N*k)
+    const numeratorMutual = d * (intrateMutual -1)
+    const denominatorMutual = (r-0.0174)/k
+
+    //Variable 3% fee
+    const intrateVariable = Math.pow((1 + (r-0.03)/k) , N*k)
+    const numeratorVariable = d * (intrateVariable -1)
+    const denominatorVariable = (r-0.03)/k
+
 //catchup is additional perecentage want to add up to 540 more a month//
+    //0.07% fee
+
     if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
         const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
         const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
-        let intratecatchup = Math.pow((1+r/k), catchupN*k)
-        let numeratorcatchup =  catchuppmt * (intratecatchup - 1)
-        let catchupperiodsvalue = numeratorcatchup/ denominator
+        let intratecatchupIndex = Math.pow((1+(r-0.00007)/k), catchupN*k)
+        let numeratorcatchupIndex =  catchuppmt * (intratecatchupIndex - 1)
+        let catchupperiodsvalueIndex = numeratorcatchupIndex/ denominatorIndex
        // let otherperiodN = N - catchupN  
        // let otherperiodintrate = Math.pow((1 + r/k), otherperiodN*k)
        // let otherperiodnumerator = d * (otherperiodintrate -1)
-        let otherperiodsvalue = numerator / denominator
-        let value = catchupperiodsvalue + otherperiodsvalue + currentBalance
-        document.querySelector('#placeForValue').innerText = value
-        document.getElementById('401kCalcResults').style.display = 'block' 
-
-    } else if ( catchup === "" || catchup === "0"){
-        let value = numerator / denominator
-        value = (value + currentBalance) 
-         document.querySelector('#placeForValue').innerText = value 
+        let otherperiodsvalueIndex = numeratorIndex / denominatorIndex
+        let valueIndex = catchupperiodsvalueIndex + otherperiodsvalueIndex + currentBalance
+        document.querySelector('#indexResult').innerText = valueIndex 
     }
+    
+     else if ( catchup === "" || catchup === "0"){
+        let valueIndex = numeratorIndex / denominatorIndex
+        valueIndex = (valueIndex + currentBalance) 
+        document.querySelector('#indexResult').innerText = valueIndex 
+    }
+
+    //1.74% fee
+    if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+        const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
+        const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
+        let intratecatchupMutual = Math.pow((1+(r-0.0174)/k), catchupN*k)
+        let numeratorcatchupMutual =  catchuppmt * (intratecatchupMutual - 1)
+        let catchupperiodsvalueMutual = numeratorcatchupMutual/ denominatorMutual
+        let otherperiodsvalueMutual = numeratorMutual / denominatorMutual
+        let valueMutual = catchupperiodsvalueMutual + otherperiodsvalueMutual + currentBalance
+        document.querySelector('#mutualResult').innerText = valueMutual 
+    }
+    
+     else if ( catchup === "" || catchup === "0"){
+        let valueMutual = numeratorMutual / denominatorMutual
+        valueMutual = (valueMutual + currentBalance) 
+        document.querySelector('# mutualResult').innerText = valueMutual 
+    }
+
+        //3% fee
+        if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+            const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
+            const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
+            let intratecatchupVariable = Math.pow((1+(r-0.03)/k), catchupN*k)
+            let numeratorcatchupVariable =  catchuppmt * (intratecatchupVariable - 1)
+            let catchupperiodsvalueVariable = numeratorcatchupVariable/ denominatorVariable
+            let otherperiodsvalueVariable = numeratorVariable / denominatorVariable
+            let valueVariable = catchupperiodsvalueVariable + otherperiodsvalueVariable + currentBalance
+            document.querySelector('#variableResult').innerText = valueVariable 
+        }
+        
+         else if ( catchup === "" || catchup === "0"){
+            let valueVariable = numeratorVariable / denominatorVariable
+            valueVariable = (valueVariable + currentBalance) 
+            document.querySelector('#variableResult').innerText = valueVariable
+        }
+    
 }
+
+/*         document.querySelector('#placeForValue').innerText = value
+        document.getElementById('401kCalcResults').style.display = 'block'  */
+
 
 document.querySelector('#estimate').addEventListener('click', calculate)
 function calculate() {
@@ -97,7 +153,6 @@ function calculate() {
     let denominator = growthP / 12
     let retirementAmount = numerator / denominator
     document.querySelector('#placeForEst').innerText = retirementAmount
-    document.getElementById('401kProjResults').style.display = 'block' 
 }
 
 
