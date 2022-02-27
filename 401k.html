@@ -18,11 +18,10 @@
 		<header>
 			<nav class="headerHire">
 				<div class="navLeft">
-					<a href="index.html"><span>Go back to main page<span></a> | 
-					<a href="403b.html"><span>Calculate your 403(b)</span></a>
+					<a href="index.html"><img class="headerLogo" src="img/logohack.svg" alt="Logo that takes you back to the main page"></a> 
 				</div>
 				<div class="navRight">
-					<img class="headerLogo" src="img/logohack.svg" alt="Logo">
+					<a href="index.html"><span>Go back to main page<span></a> 
 				</div>
 
 
@@ -73,7 +72,7 @@
 				<section class="sectionMiddle">
 					<h3>Calculate your 401(k) balance on retirement</h3>
 					
-					<form class="401kCalculatorSimple" id="form401kBalance">
+					<form id="form401kBalance">
 						<div>
 							<label for="401kbalance">Current 401(k) balance</label>
 							<input name="401kbalance" id="value401k" placeholder="12345" type="number" min="0" step="100">
@@ -85,26 +84,62 @@
 						</div>
 
 						<div>
-							<label for="annualRate">Annual Return Rate</label>
-							<input name="annualRate" id="annualrate" type="number" min="0" step="0.01"  placeholder="In decimals, e.g 0.03" aria-placeholder="In decimals, as in 0.03 for 3%">
+							<label for="annualRate">Annual Return Rate %</label>
+							<input name="annualRate" id="annualrate" type="number" min="0" step="1"  placeholder="3" aria-placeholder="The percentage number without the % sign">
 						</div>
 
 						<div>
-							<label for="yearsAhead">Years until retirement</label>
-							<input name="yearsAhead" id="yearsleft" placeholder="35" type="number" min="0" step="1">
+							<label for="currentAge">Current age</label>
+							<input name="currentAge" id="currentage" placeholder="35" type="number" min="0" step="1">
+						</div>
+
+						<div>
+							<label for="ageOfRetirement">Retirement age</label>
+							<input name="ageOfRetirement" id="rtmtage" placeholder="65" type="number" min="0" step="1">
+						</div>
+
+						<div>
+							<label for="catchupAmount">For those over 50:<br>catch up amount (percentage)</label>
+							<input name="catchupAmount" id="catchupamount" type="number" min="0" step="1" placeholder="3" aria-placeholder="The percentage number without the % sign">
 						</div>
 
 					</form>
 
 					<button type="button" id="compute">Show Results</button>
-					<button type="button" id="reset">Reset Fields</button>
+					<button type="button" id="reset401Calc">Reset Fields</button>
 
 					<h4 id="401kCalcResults">Upon retirement, the amount in your 401(k) account will be: US$<span id="placeForValue">.</h4>
 			</section>
 				
 				<section class="section403">
-					<h3>Calculate Y</h3>
-					<p>Lies down run around the house at 4 in the morning yet bite nose of your human for my water bowl is clean and freshly replenished, so i'll reward the chosen human with a slow blink so carefully drink from water glass and then spill it everywhere and proceed to lick the puddle.</p>
+					<h3>Your Retirement Projection</h3>
+					<form id="form401kEstimate">
+						<div>
+							<label for="monthlyWithdraw">Estimated monthly withdrawal:</label>
+							<input id="valueMonthly" type="number" name="monthlyWidthdrawal" min="0" step="100"  placeholder="3000">
+						</div>
+
+						<div>
+							<label for="growthRate">Estimated growth rate (percentage): </label>
+							<input id="growthInput" type="number" name="growthRate" min="0" step="1"  placeholder="3">
+						</div>
+
+						<div>
+							<label for="retirementAge">Retirement Age:</label>
+							<input id="retAge" type="number" name="retirementAge" placeholder="65" min="0" step="1">
+						</div>
+
+						<div>
+							<label for="lifespanAge">Lifespan Expectancy:</label>
+							<input id="lifeAge" type="number" name="lifespanAge" min="0" step="1"  placeholder="79">
+						</div>
+					</form>
+
+					<button id="estimate" type="button">Estimate Your Retirement Needs</button>
+					<button id="reset401Projection" type="button">Reset</button>
+				</form>
+				
+				<h4 id="401kProjResults">Your projected retirement amount is: US$ <span id="placeForEst">.</h4>
 				</section>
 		</section>
 		</main>

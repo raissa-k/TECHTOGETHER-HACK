@@ -286,7 +286,7 @@ button {
   margin: 1% 1% 2% 1%;
 }
 
-.sectionMiddle button {
+.sectionMiddle button, .section403 button {
   height: auto;
   padding: 2%;
 }
