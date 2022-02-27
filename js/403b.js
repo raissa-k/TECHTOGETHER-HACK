@@ -20,28 +20,7 @@ document.getElementById('zoomNormalButton').onclick = function() {
     x.style.fontSize= '62.5%';
 }
 
-/* document.querySelector('#compute').addEventListener('click',amount401k)
-
-function amount401k(){
-    const currentBalance = document.querySelector('#value401k').value
-    const d = document.querySelector('#monthlycont').value 
-    const k = 12;
-    const r = document.querySelector('#annualrate').value 
-    const N = document.querySelector('#yearsleft').value 
-    const intrate= Math.pow(1 + r/k , N*k)
-    const numerator = d * (intrate - 1)
-    const denominator = r/k
-    const growth = 0.05
-    const estgrowth = Math.pow((1 + growth/k),k*N)
-    let value = numerator / denominator
-    value = value + currentBalance * estgrowth
-    document.querySelector('#placeForValue').innerText = value
-    document.getElementById('401kCalcResults').style.display = 'block' 
-} */
-
-
 document.querySelector('#compute').addEventListener('click',amount401k)
-//document.querySelector('#reset').addEventListener('click',reset)
 
 function amount401k(){
     const currentBalance = document.querySelector('#value401k').value
@@ -58,16 +37,19 @@ function amount401k(){
     const intrateIndex = Math.pow((1 + (r-0.0007)/k) , N*k)
     const numeratorIndex = d * (intrateIndex -1)
     const denominatorIndex = (r-0.00007)/k
+    const cBalIndex = currentBalance * Math.pow((1 + (r-0.0007)/k), N*k)
 
     //Mutual fund 1.74% fee
     const intrateMutual = Math.pow((1 + (r-0.0174)/k) , N*k)
     const numeratorMutual = d * (intrateMutual -1)
     const denominatorMutual = (r-0.0174)/k
+    const cBalMutual = currentBalance * Math.pow((1 + (r-0.0174)/k), N*k)
 
     //Variable 3% fee
     const intrateVariable = Math.pow((1 + (r-0.03)/k) , N*k)
     const numeratorVariable = d * (intrateVariable -1)
     const denominatorVariable = (r-0.03)/k
+    const cBalVariable = currentBalance * Math.pow((1 + (r-0.03)/k), N*k)
 
 //catchup is additional perecentage want to add up to 540 more a month//
     //0.07% fee
@@ -78,17 +60,14 @@ function amount401k(){
         let intratecatchupIndex = Math.pow((1+(r-0.00007)/k), catchupN*k)
         let numeratorcatchupIndex =  catchuppmt * (intratecatchupIndex - 1)
         let catchupperiodsvalueIndex = numeratorcatchupIndex/ denominatorIndex
-       // let otherperiodN = N - catchupN  
-       // let otherperiodintrate = Math.pow((1 + r/k), otherperiodN*k)
-       // let otherperiodnumerator = d * (otherperiodintrate -1)
         let otherperiodsvalueIndex = numeratorIndex / denominatorIndex
-        let valueIndex = catchupperiodsvalueIndex + otherperiodsvalueIndex + currentBalance
+        let valueIndex = (catchupperiodsvalueIndex + otherperiodsvalueIndex + cBalIndex)
         document.querySelector('#indexResult').innerText = valueIndex 
     }
     
      else if ( catchup === "" || catchup === "0"){
         let valueIndex = numeratorIndex / denominatorIndex
-        valueIndex = (valueIndex + currentBalance) 
+        valueIndex = (valueIndex + cBalIndex) 
         document.querySelector('#indexResult').innerText = valueIndex 
     }
 
@@ -100,13 +79,13 @@ function amount401k(){
         let numeratorcatchupMutual =  catchuppmt * (intratecatchupMutual - 1)
         let catchupperiodsvalueMutual = numeratorcatchupMutual/ denominatorMutual
         let otherperiodsvalueMutual = numeratorMutual / denominatorMutual
-        let valueMutual = catchupperiodsvalueMutual + otherperiodsvalueMutual + currentBalance
+        let valueMutual = (catchupperiodsvalueMutual + otherperiodsvalueMutual + cBalMutual)
         document.querySelector('#mutualResult').innerText = valueMutual 
     }
     
      else if ( catchup === "" || catchup === "0"){
         let valueMutual = numeratorMutual / denominatorMutual
-        valueMutual = (valueMutual + currentBalance) 
+        valueMutual = (valueMutual + cBalMutual) 
         document.querySelector('# mutualResult').innerText = valueMutual 
     }
 
@@ -118,20 +97,18 @@ function amount401k(){
             let numeratorcatchupVariable =  catchuppmt * (intratecatchupVariable - 1)
             let catchupperiodsvalueVariable = numeratorcatchupVariable/ denominatorVariable
             let otherperiodsvalueVariable = numeratorVariable / denominatorVariable
-            let valueVariable = catchupperiodsvalueVariable + otherperiodsvalueVariable + currentBalance
+            let valueVariable = (catchupperiodsvalueVariable + otherperiodsvalueVariable + cBalVariable)
             document.querySelector('#variableResult').innerText = valueVariable 
         }
         
          else if ( catchup === "" || catchup === "0"){
             let valueVariable = numeratorVariable / denominatorVariable
-            valueVariable = (valueVariable + currentBalance) 
+            valueVariable = (valueVariable + cBalVariable) 
             document.querySelector('#variableResult').innerText = valueVariable
         }
     
 }
 
-/*         document.querySelector('#placeForValue').innerText = value
-        document.getElementById('401kCalcResults').style.display = 'block'  */
 
 
 document.querySelector('#estimate').addEventListener('click', calculate)
