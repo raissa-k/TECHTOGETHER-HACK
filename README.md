@@ -8,4 +8,4 @@
 
 To-do:
 - Possibly add a page with more information about the plans
-- Fix the calculation with the catch up input and age over 50
+- Fix details over at the 403(b) calculator output for different fees
