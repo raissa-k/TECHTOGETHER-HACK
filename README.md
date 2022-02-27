@@ -44,20 +44,17 @@ On the navigation department, a challenge that could not be overcome with the ti
 ## Accomplishments that we're proud of
 ### Raissa
 I'm proud of being able to make an accessible website to host the calculators. Although the design might not be super creative or groundbreaking, it is easy to navigate.
-### Leah
-Placeholder
-### Andie
-Placeholder
-### Mili
-Placeholder
 
 ## What we learned
 ### Raissa
 As this was my first real use of JavaScript on a project, I learned a lot about functions and how to customize solutions that are already available. It was also very helpful to run Lighthouse tests on the website to check for accessibility issues.
+
 ### Leah
 Placeholder
+
 ### Andie
 Placeholder
+
 ### Mili
 Placeholder
 
@@ -65,20 +62,26 @@ Placeholder
 ### Raissa
 With time, I'd reduce the number of CSS and JavaScript files, and have the buttons for font resizing to make incremental adjustments. 
 I'd like to research and possibly introduce features such as accomodations for color blindness and dyslexia. I am also interested in making a bilingual website not dependant on external translation APIs.
+
 ### Leah
 Placeholder
+
 ### Andie
 Placeholder
+
 ### Mili
 Placeholder
 
 ## What we learned
 ### Raissa
 As this was my first real use of JavaScript on a project, I learned a lot about functions and how to customize solutions that are already available. It was also very helpful to run Lighthouse tests on the website to check for accessibility issues.
+
 ### Leah
 Placeholder
+
 ### Andie
 Placeholder
+
 ### Mili
 Placeholder
 
