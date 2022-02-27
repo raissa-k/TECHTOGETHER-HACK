@@ -272,6 +272,14 @@ button {
   background-color: #063d5d;
 }
 
+.easterButton {
+  height: 3rem;
+  width: 3rem;
+  padding: 2%;
+  border: none;
+  background-color: #ffffff00;
+}
+
 
 /******************************************
 /* FOOTER
