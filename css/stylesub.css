@@ -40,9 +40,8 @@ header, section, footer{
 width: 100%;
 }
 
-a:focus, button:focus, a:active, button:active {
+a:focus, button:focus, a:active, button:active, input:focus {
   border: 0.3rem solid #c92525;
-  text-decoration: underline;
 }
 
 /******************************************

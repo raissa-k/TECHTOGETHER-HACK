@@ -42,7 +42,6 @@ width: 100%;
 
 a:focus, button:focus, a:active, button:active {
   border: 0.3rem solid #c92525;
-  text-decoration: underline;
 }
 
 /******************************************
@@ -185,7 +184,7 @@ height: 8rem;
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
-  text-shadow: 1px 1px 2px #353d46;
+  text-shadow: 1px 1px 2px #bebebe;
 }
 
 .sectionBanner h1, .sectionMiddle h2 {
@@ -195,7 +194,7 @@ height: 8rem;
   letter-spacing: 0.1rem;
   padding-top: 5%;
   color: #063d5d;
-  text-shadow: 1px 1px 2px #8499B1;
+  text-shadow: 1px 1px 2px #bebebe;
 }
 
 .sectionBanner p {
@@ -246,7 +245,7 @@ height: 8rem;
   padding-top: 2%;
   font-size: 2rem;
   font-weight: bolder;
-  text-shadow: 1px 1px 2px #353d46;
+  text-shadow: 1px 1px 2px #bebebe;
 }
 
 .section401 p, .sectionMiddle p, .section403 p {
