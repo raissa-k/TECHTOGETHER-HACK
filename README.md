@@ -37,18 +37,13 @@ For the retirement projection, rather than show how much could be safely withdra
 ## Challenges we ran into
 The information available often contradicts itself or is simply obfuscating. It was a challenge in and of itself to understand 401(k) and 403(b) through research so it would be possible write down the formulas.
 
-(((about the calculators)))
+### MORE STUFF HERE
 
 On the navigation department, a challenge that could not be overcome with the time available was the resizing of the fonts. This feature was idealized as incremental changes to font size rather than a set amount.
 
 ## Accomplishments that we're proud of
 ### Raissa
 I'm proud of being able to make an accessible website to host the calculators. Although the design might not be super creative or groundbreaking, it is easy to navigate.
-
-## What we learned
-### Raissa
-As this was my first real use of JavaScript on a project, I learned a lot about functions and how to customize solutions that are already available. It was also very helpful to run Lighthouse tests on the website to check for accessibility issues.
-
 ### Leah
 Placeholder
 
@@ -58,19 +53,6 @@ Placeholder
 ### Mili
 Placeholder
 
-## What's next for Capital Hack
-### Raissa
-With time, I'd reduce the number of CSS and JavaScript files, and have the buttons for font resizing to make incremental adjustments. 
-I'd like to research and possibly introduce features such as accomodations for color blindness and dyslexia. I am also interested in making a bilingual website not dependant on external translation APIs.
-
-### Leah
-Placeholder
-
-### Andie
-Placeholder
-
-### Mili
-Placeholder
 
 ## What we learned
 ### Raissa
