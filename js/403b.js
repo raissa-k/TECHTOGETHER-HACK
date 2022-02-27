@@ -72,7 +72,7 @@ function amount401k(){
 //catchup is additional perecentage want to add up to 540 more a month//
     //0.07% fee
 
-    if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+    if(catchupage >= "0" && catchup !== "" && catchup !== '0' || currentage >= 50){
         const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
         const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
         let intratecatchupIndex = Math.pow((1+(r-0.00007)/k), catchupN*k)
@@ -93,7 +93,7 @@ function amount401k(){
     }
 
     //1.74% fee
-    if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+    if(catchupage >= "0" && catchup !== "" && catchup !== '0' || currentage >= 50){
         const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
         const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
         let intratecatchupMutual = Math.pow((1+(r-0.0174)/k), catchupN*k)
@@ -111,7 +111,7 @@ function amount401k(){
     }
 
         //3% fee
-        if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+        if(catchupage >= "0" && catchup !== "" && catchup !== '0' || currentage >= 50){
             const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
             const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
             let intratecatchupVariable = Math.pow((1+(r-0.03)/k), catchupN*k)

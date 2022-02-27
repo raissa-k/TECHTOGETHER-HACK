@@ -58,7 +58,7 @@ function amount401k(){
    // const growth = 0.05
     //const estgrowth = Math.pow((1 + growth/k),k*N)
 //catchup is additional perecentage want to add up to 540 more a month//
-    if(catchupage >= "0" && catchup !== "" && catchup !== '0'){
+    if(catchupage >= "0" && catchup !== "" && catchup !== '0' || currentage >= 50){
         const catchupN = rtmtage - 50  //catchupN limit in 20.5yrs//
         const catchuppmt = 541.666667*catchup //original payment plus percentage of catchup pmt//
         let intratecatchup = Math.pow((1+r/k), catchupN*k)
@@ -78,6 +78,7 @@ function amount401k(){
     }
 
 }
+
 
 document.querySelector('#estimate').addEventListener('click', calculate)
 function calculate() {
