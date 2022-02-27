@@ -51,12 +51,15 @@ As this was my first real use of JavaScript on a project, I learned a lot about 
 
 ### Leah
 Placeholder
+lalalla
 
 ### Andie
 Placeholder
+lalalala
 
 ### Mili
 Placeholder
+alalal
 
 ## What's next for Capital Hack
 ### Raissa
@@ -65,12 +68,15 @@ I'd like to research and possibly introduce features such as accomodations for c
 
 ### Leah
 Placeholder
+lalala
 
 ### Andie
 Placeholder
+lalala
 
 ### Mili
 Placeholder
+lalala
 
 ## What we learned
 ### Raissa
@@ -78,12 +84,15 @@ As this was my first real use of JavaScript on a project, I learned a lot about 
 
 ### Leah
 Placeholder
+lalala
 
 ### Andie
 Placeholder
+lalala
 
 ### Mili
 Placeholder
+lalala
 
 ## What's next for Capital Hack
 ### Raissa
@@ -92,9 +101,12 @@ I'd like to research and possibly introduce features such as accomodations for c
 
 ### Leah
 Placeholder
+lalala
 
 ### Andie
 Placeholder
+llaala
 
 ### Mili
 Placeholder
+lalala
