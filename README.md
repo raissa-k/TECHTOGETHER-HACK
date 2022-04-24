@@ -5,6 +5,8 @@ We were interested in building a calculator. During our brainstorming, we came u
 The calculators take into account factors such as current age, age of retirement, contribution and the annual return rate to tell the users how much they'll have in their account by the time they retire. 
 Another feature is the retirement projection, which estimates the amount needed to support the user's lifestyle based on retirement age and lifespan expectancy.
 
+![](img/chrome_OIsR0H3gd5.gif)
+
 ## How we built it
 The factors to be taken into account by the formulas were based on research of how 401(k) and 403(b) contributions work, and how fees are calculated.
 For the retirement projection, rather than show how much could be safely withdrawn each month (safe withdrawal rate), we went the opposite direction and calculated the amount needed to be able to support a set monthly withdrawal. 
